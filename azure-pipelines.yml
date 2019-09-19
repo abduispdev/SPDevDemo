@@ -38,6 +38,6 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.SourcesDirectory)/devops/release/'
+    PathtoPublish: '$(Build.SourcesDirectory)/sharepoint/release/'
     ArtifactName: 'Office 365 CLI Scripts'
   displayName: 'publish build Office 365 CLI artifacts'
