@@ -25,11 +25,7 @@ steps:
     gulp bundle --ship
     gulp package-solution --ship
   displayName: 'build and package the solution'
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
-    publishLocation: 'Container'
+
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.SourcesDirectory)/sharepoint/solution/spdevdemo.sppkg'
@@ -38,6 +34,6 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.SourcesDirectory)/sharepoint/solution/'
-    ArtifactName: 'Office 365 CLI Scripts'
-  displayName: 'publish build Office 365 CLI artifacts'
+    PathtoPublish: '$(Build.SourcesDirectory)/devops/release/'
+    ArtifactName: 'Office 365 CLI scripts'
+  displayName: 'Publish build Office 365 CLI artifacts'
