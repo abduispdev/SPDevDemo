@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spdevdemo-client-side-solution",
+    "id": "1153dc2e-ae2d-4e25-a1be-5606ee567baa",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/spdevdemo.sppkg"
+  }
+}
