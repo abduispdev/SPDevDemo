@@ -34,6 +34,6 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.SourcesDirectory)/sharepoint/solution/office-365-CLI-add-app.sh'
+    PathtoPublish: '$(Build.SourcesDirectory)/sharepoint/solution/debug/office-365-CLI-add-app.sh'
     ArtifactName: 'Office 365 CLI scripts'
   displayName: 'Publish build Office 365 CLI artifacts'
